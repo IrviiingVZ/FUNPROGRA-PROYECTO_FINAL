@@ -16,8 +16,9 @@ public class JavaApplication21 {
         int op1, op2, op3; //OPCIONES
         String nombre;
         String clave;
-        //Personalidad I = introvertido E = Extrovertido
-        int I, E;
+        //Personalidad I = introvertido E = Extrovertido ACUMULADOR
+        int I = 0;
+        int E = 0;
         
         
         System.out.println("Bienvenido a LOTUS, En este emocionante juego, te sumergirás en una historia llena de romance,");
@@ -91,6 +92,7 @@ public class JavaApplication21 {
             
             op2 = captu.nextInt();
             if (op2==1) {
+                E += 5; //Acumulador Extrovertido
                 System.out.println("Al acercarte al bullicio de gente, te encuentras rodeado de una variedad de personajes ");
                 System.out.println("coloridos. Entre la multitud, pudiste notar como una chica destacaba por su risa.");
                 System.out.println("Una chica de pelo cobrizo, rizado y vestida de una forma informal");
@@ -98,6 +100,7 @@ public class JavaApplication21 {
                 
             }
             else if(op2==2){
+                I += 5; //Acumulador Introvertido
                 System.out.println("Mientras lees tu libro se acerca una chica de pelo cobrizo, rizado y vestida de una ");
                 System.out.println("forma informal, con una blusa de color morado y un pantalón de mezclilla largo");
                 System.out.println("Ojos cafes y de una tez morena.");
@@ -111,6 +114,10 @@ public class JavaApplication21 {
                 System.out.println("2.- Decirle que sí y hasta darle un espacio "); //+3 Extrovertido y Rela +5
                 System.out.println("3.- Decirle que no, quieres estar solo/a"); //+3 Introvertido --> Rela: -5
                 op3 = captu.nextInt();
+                
+                if(op3 == 1){
+                    
+                }
                 
                
             
