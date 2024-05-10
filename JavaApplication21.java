@@ -12,13 +12,29 @@ public class JavaApplication21 {
 
     
     public static void main(String[] args) {
+        int[] puntos = new int[9]; //Arreglo almacen de las personalidades
         
         int op1, op2, op3; //OPCIONES
         String nombre;
         String clave;
-        //Personalidad I = introvertido E = Extrovertido ACUMULADOR
+        //Personalidad I = introvertido E = Extrovertido
         int I = 0;
         int E = 0;
+        //Personalidad J = Juzgar P = Prospección
+        int j = 0;
+        int p = 0;
+        //personalidad in = Intuitivo O = Observador
+        int in = 0;
+        int O = 0;
+        //Personalidad pe 0 Pensamiento S = Sentimiento
+        int pe = 0;
+        int S = 0;
+        //Personajes relación con el usuario:
+        int Violett = 0; //ENFP
+        int Elena = 0; //
+        int Irving = 0; //ISFP
+        int Axel = 0; //ENTP
+        
         
         
         System.out.println("Bienvenido a LOTUS, En este emocionante juego, te sumergirás en una historia llena de romance,");
@@ -54,17 +70,100 @@ public class JavaApplication21 {
      
         op1= captu.nextInt();
         
-        if (op1 == 1){
+        switch (op1) {
+            case 1:
         System.out.println("Bienvenido a la fase 3 " + nombre);
         
-        }
-        else if (op1 == 2){
-            System.out.println("Bienvenido a la fase 4 " + nombre);
-            System.out.println("");
-        }
-        else if (op1 == 3)
+            case 2:
+            System.out.println("Bienvenido a la fase 4:Gotas sin rumbo " + nombre);
+                System.out.println("");
+            
+                System.out.println("Era un día soleado, ninguna nube se veía alrededor del cielo por lo que no ");
+                System.out.println("te preocupaste por llevar un paraguas. El mismo clima te había dejado en claro que ");
+                System.out.println("iba a ser un día ideal para un picnic.");
+            
+                System.out.println("");
+            
+                System.out.println("Al entrar a la biblioteca, te diriges hacia lo que era una mesa algo escondida, enfrente ");
+                System.out.println("de una gran ventana mostrando el como las gotas del agua se resbalaban y chocaban ");
+                System.out.println("con la ventana, ya estaba empezando a llover.");
+                
+                System.out.println("");
+                
+                System.out.println("Axel: ¿Qué tal, compañero/a de estudio? Parece que el clima no nos está favoreciendo ");
+                System.out.println("hoy. ¿Estás listo para desafiar a la tormenta y conquistar este proyecto juntos?");
+                
+                System.out.println("");
+                
+                System.out.println("Al sentarte en la silla enfrente de él, pudiste notar como ya estaba empezando a estudiar sobre el tema del proyecto.");
+                
+                System.out.println("1.- Prefiero un plan detallado antes de comenzar. ");//+5 juzgar
+                System.out.println("2.- Me gusta tener un plan general, pero puedo improvisar. ");// +3 Juzgar +2 prospeccion
+                System.out.println("3.-Prefiero tener una idea básica y adaptarme según sea necesario.");// +3 juzgar y +3 prospección
+                System.out.println("4.-Me siento más cómodo improvisando desde el principio."); //+5 prospección
+                
+                op1 = captu.nextInt();
+                
+                if (op1 == 1) {
+                    System.out.println("Necesitamos tener claras todas las variables para poder improvisar con estilo.");
+                    
+                    System.out.println("");
+                    
+                    System.out.println("Al ser Axel una persona que se lleva mejor al momento de improvisar le parece una");
+                    System.out.println("perdida de tiempo el ponerse a analizar bien todos los aspectos para concretar un plan.");
+                    System.out.println("Pero aun así respeta tu opinión");
+                    
+                    System.out.println("");
+                    j=+5;
+                 }    
+                else if (op1 == 2){
+                    System.out.println("Axel: Algunas veces está bien improvisar, aun teniendo un plan en mente nunca se puede estar");
+                    System.out.println("seguro completamente de que vaya a funcionando.");
+                    System.out.println("");
+                    System.out.println("Le gusto tu respuesta, entiende completamente que muchas veces lo ideal es hacer un plan, pero");
+                    System.out.println("aun así le gusta tu iniciativa de estar dispuesto a improvisar.");
+                    System.out.println("");
+                    j=+3;
+                    p=+2;
+                }
+                else if(op1 == 3){
+                
+                System.out.println("Axel: Excelente, de igual forma solo investigue lo principal del proyecto. Pero me agrada mas");
+                    System.out.println("anzarme a la acción que esperar por un plan bastante detallado.");
+                    System.out.println("");
+                    System.out.println("Le gusto tu respuesta, Axel prefiere improvisar pero igual respeta que siempre se debe tener una");
+                    System.out.println("idea para tomar como base al momento de hacer un plan.");
+                    System.out.println("");
+                    j=+3;
+                    p=+3;
+                }
+                else if(op1 == 4){
+                
+                    System.out.println("Axel: Confío en mi capacidad para pensar rápido y actuar aún más rápido. ¿Un plan detallado?");
+                    System.out.println("¡Aburrido! Somos capaces de hacer este proyecto con pura intuición y una pizca de locura creativa.");
+                    System.out.println("");
+                    System.out.println("Alex se siente bastante cómodo de conocer alguien que opine igual que el,");
+                    System.out.println("");
+                   
+                    p=+5;
+                }
+                
+                System.out.println("Axel: Muy bien " + nombre + " como ya sabes tenemos que mostrar información de lo que sabemos de este pueblo...");
+                System.out.println("pero honestamente no he encontrado nada interesante. Mas que los fundadores y varias fotografías viejas.");
+                System.out.println("");
+                System.out.println("Te quedas pensando en ello, y tenia razón, cualquier tipo de información de este pueblo no podía ser relevante. ");
+                System.out.println("Aun siendo nuevo/a en este lugar, te has dado cuenta que todo es inusualmente tranquilo y desconocido, como un tipo de vacío.");
+                System.out.println("");
+                System.out.println(nombre + ": Tienes razón, este pueblo se siente... vacío realmente no creo que vayamos a encontrar algo mas interesante que los fundadores ");
+                System.out.println("lanzaron una flecha para decidir su destino. ");
+                System.out.println("");
+                break;
+            
+            case 3:
             System.out.println("Bienvenido a la fase 2 " + nombre );
-        else if (op1 == 4){
+            break;
+            
+            case 4:
             System.out.println("Bienvenido a la fase 1: primeros petalos, " + nombre);
         
         System.out.println();
@@ -92,7 +191,6 @@ public class JavaApplication21 {
             
             op2 = captu.nextInt();
             if (op2==1) {
-                E += 5; //Acumulador Extrovertido
                 System.out.println("Al acercarte al bullicio de gente, te encuentras rodeado de una variedad de personajes ");
                 System.out.println("coloridos. Entre la multitud, pudiste notar como una chica destacaba por su risa.");
                 System.out.println("Una chica de pelo cobrizo, rizado y vestida de una forma informal");
@@ -100,7 +198,6 @@ public class JavaApplication21 {
                 
             }
             else if(op2==2){
-                I += 5; //Acumulador Introvertido
                 System.out.println("Mientras lees tu libro se acerca una chica de pelo cobrizo, rizado y vestida de una ");
                 System.out.println("forma informal, con una blusa de color morado y un pantalón de mezclilla largo");
                 System.out.println("Ojos cafes y de una tez morena.");
@@ -115,17 +212,45 @@ public class JavaApplication21 {
                 System.out.println("3.- Decirle que no, quieres estar solo/a"); //+3 Introvertido --> Rela: -5
                 op3 = captu.nextInt();
                 
-                if(op3 == 1){
-                    
-                }
-                
                
-            
+            break;
             }
-            
+            default:
+                System.out.println("Opción no válida. Por favor, selecciona una opción del 1 al 4.");
+                break;
         }
         
-        
+        mostrarPuntos(puntos);
    
+    }
+    public static void actualizarAcumuladores(int opcion, int[] puntos) {
+    switch (opcion) {
+        case 1:
+            puntos[6] += 5; // Sumar puntos --> Pensamiento
+            puntos[7] += 5; // Sumar puntos --> Sentimiento
+            break;
+        case 2:
+            puntos[2] += 5; // Sumar puntos --> Juzgar
+            puntos[3] += 5; // Sumar puntos --> Prospección
+            break;
+        case 3:
+            puntos[4] += 5; // Sumar puntos --> Intuitivo
+            puntos[5] += 5; // Sumar puntos --> Observador
+            break;
+        case 4:
+            puntos[0] += 5; // Sumar puntos --> Introvertido
+            puntos[1] += 5; // Sumar puntos --> Extrovertido
+            break;
+        default:
+            System.out.println("Opción no válida. Por favor, selecciona una opción válida.");
+            break;
+    }
+}
+    
+    
+    public static void mostrarPuntos(int[] puntos){
+        for (int i = 0; i < puntos.length; i++) {
+            System.out.println("Puntos en la categoria " + i + ":" + puntos[i]);
+        }
     }
 }
