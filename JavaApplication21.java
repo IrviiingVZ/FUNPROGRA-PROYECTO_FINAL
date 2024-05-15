@@ -448,6 +448,114 @@ public class JavaApplication21 {
                 System.out.println(nombre + ": Tienes razón, este pueblo se siente... vacío realmente no creo que vayamos a encontrar algo mas interesante que los fundadores ");
                 System.out.println("lanzaron una flecha para decidir su destino. ");
                 System.out.println("");
+                System.out.println("Axel: A eso mismos quería llegar, hasta me arrepiento de elegir este tema como exposició.");
+        System.out.println("¿que te parecería cambiar de tema?");
+        
+        System.out.println("1.- Soy muy flexible y estoy dispuesto/a a cambiar de dirección.");
+        System.out.println("2.- Soy flexible, pero prefiero seguir el plan original.");
+        System.out.println("3.- Prefiero seguir el plan, pero puedo adaptarme si es necesario.");
+        System.out.println("4.- No me gusta cambiar de dirección y prefiero mantener el plan original.");
+        
+        op1 = captu.nextInt();
+        if (op1 == 1){
+            System.out.println(nombre + "No encuentro problema en cambiar de proyecto, paro aun así no tendriamos mucho tiempo para elaborar.");
+        }
+        else if (op1 == 2){
+            System.out.println(nombre + "Prefiero seguir el plan original, después de todo este proyecto es para esta semana.");
+        }
+        else if (op1 == 3){
+        System.out.println(nombre + "Sigamos el plan original, podemos adaptarnos si es necesario, pero este trabajo es para esta semana.");
+        }
+        else if (op1 == 4){
+            System.out.println(nombre + "¡Para nada! Debemos de seguir este trabajo, debemos de mantenerlos al plan orginal. Este trabajo es para esta semana.");
+        }
+        System.out.println("Axel la penso por un momento, tenias razon, ya era demasiado tarde para cambiar de proyecto.");
+        System.out.println("Sin embargo, tampoco estaba de acuerdo de sacar una historia aburrida del lanzamiento de una flecha.");
+        System.out.println("");
+        System.out.println("Axel: Tienes razón, tal vez podamos encontara información en el faro.");
+        System.out.println("La chica de ahí tiene conocimiento de todo lo que pasa y ha pasado en este pueblo.");
+        
+        System.out.println("1.- No creo haber escuchado de ella.");
+        System.out.println("2,- ¿Chica en un faro..? Te refieres a Elena?");
+        
+        op1 = captu.nextInt();
+        if (op1 == 1){
+            System.out.println("Axel: Tiene sentido, despues de todo eres nuevo/a por aquí.");
+            System.out.println("Pero tal vez tengas la oportunidad de conocerla.");
+            System.out.println("Dice algo pensativo mientras giraba su pluma algo pensativo.");
+            
+            System.out.println("Axel: El caso es que ella tiene todo tipo de información del pueblo, pero no creo que podamos ir a visitarla por la lluvia...");
+            System.out.println("No me llevo mucho con ella, se me hace alguien muy entrometida, pero cuando puedas habla con ella, aprovecha la oportunidad.");
+            
+            System.out.println("Axel se levanta de la silla, mostrando su atuendo algo informal, ropa holgada.");
+            System.out.println("Axel: Muy bien, vamos a investgar por la biblioteca, de seguro encontramos algo por aquells estatuas, tiene toda la pinta de tener algo oculto.");
+        }
+        else if (op1 == 2){
+            System.out.println("Axel: Así es, vaya que haces amigos muy rápido! Entonces ya debes de conocer algunos aspectos de la ciudad.");
+            
+            System.out.println("Axel: Es alguien bastante observadora, incluso algo entrometida... No muy de mi gusto pero eso es lo que la hace buena en su trabajo.");
+            System.out.println("¿Que información pudiste sacarle?");
+            
+            System.out.println("Te pusiste a pensar sobre los temas que te había dicho Elena, que fueron bastantes, pero entre esos te llamo la atención uno en especial.");
+            System.out.println( nombre + "Ahora que lo mencionas, hubo algo que me había dicho.");
+            
+            System.out.println("1.- Pasaje en la biblioteca.");
+            System.out.println("2.- Estatuas.");
+            
+            op1 = captu.nextInt();
+            if (op1 == 1){
+                System.out.println(nombre + "Me había comentado sobre un pasaje escondido en la biblioteca, dice que escucho rumores de que se encuentran varios libros ocultos.");
+                System.out.println("Axel se queda pensando algo interseado por esta nueva información, para después levantarse del lugar. ");
+                System.out.println("Axel:Muy bien, ahora sabemos que vamos a hacer hoy.");
+            }
+            else if (op1 == 2){
+                System.out.println(nombre + "Me había dicho que las estatuas esran parte de una gran historia del pueblo, pero no especifíco mucho.");
+                System.out.println("Axel se queda, pensando algo interesado por esta nueva información, para después levantarse del lugar.");
+                System.out.println("Axel: Muy bien, ahora sabemos que vamos hacer hoy.");
+            }
+            System.out.println("Axel: Vamos a empezar buscando por las estatuas de la biblioteca, de sefuro encontraremos una pista ahí");
+            System.out.println("Tiene toda la pinta de ocultar de todo.");
+        }
+        System.out.println("Pudiste notar como te extendía la mano, para que le tomes la mano.");
+        System.out.println("Axel: ¿Cómo te sientes acerca de tomar el riesgo querid@ reportera/o? ¿Prefieres mantener la seguridad o estás dispuesto a asumir este desafio?");
+        
+        System.out.println("1.- Estoy dispuesto/a a asumir riesgos calculados y desfios.");
+        System.out.println("2.- Me siento comodo?a con algunos riesgos, pero prefiero no arriesgar demasiado.");
+        System.out.println("3.- Prefiero mantener la seguridad, pero tomaré riesgos si es necesario.");
+        System.out.println("4.- Prefiero matener la seguridad y evitar riesgos siempre que sea posible.");
+        
+        op1 = captu.nextInt();
+        if (op1 == 1){
+            System.out.println("Axel: ¡Me gusta como piensas! Luchemos contra el enigma de esta biblioteca");
+        }
+        else if (op1 == 2){
+            System.out.println("Axel: Eres una persona precavida, me gusta. Pero aveces hay que tomarse unos cuantos riesgos para ver que nos brinda.");
+        }
+        else if (op1 == 3){
+            System.out.println("Axel: ¡Ese es el espíritu! Salte de tu zona de confort, de todos modos, aqui estamos juntos compañero/a.");
+        }
+        else if (op1 == 4){
+            System.out.println("Axel: ¡No seas aburrido/a! No es como si esto fuera algo de vida y muerte.");
+        }
+        System.out.println("Con este pequeño comienzo de investigación decidieron emprender el camino al fondo de la biblioteca, escondidos entre las repisas lleno de libros,");
+        System.out.println("al igual que aquel olor peculiar de libros viejos se estaba haciendo mas presente. Ante este sentimiento de desconexión, te preguntaste..");
+        System.out.println("¿Qué me motiva..?  La posibilidad de descubrir algo nuevo y emocionante o la satisfacción de resolver problemas complejos?");
+        
+        System.out.println("Me motiva más la posibilidad de descubrir algo nuevo y emocionante.");
+        System.out.println("Me motiva tanto descubrir cosas nuevas como resolver problemas complejos.");
+        System.out.println(" Me motiva más la satisfacción de resolver problemas complejos de manera metódica.");
+        
+        System.out.println("Así es, era tan claro, cada persona es diferente y tan similar.");
+        System.out.println("Que curioso que aproveche esta oportunidad para identificar tal cualidad.");
+        System.out.println("Sin mucho aviso, llegaron en cuestión de minutos, dejando a ver que Axel se dirigía a una de las estatuas.");
+        
+        System.out.println("Esto lo veias como algo sin mucho sentido aun, pero solo te quedaste mirando el rostro esculpido de una de las tastatuas,");
+        System.out.println("quien reconociste como uno de los fundadores.");
+        
+        System.out.println(nombre + "(Suspiro) Vaya... esto se ve complicado.");
+        
+        System.out.println("Axel: ¿Enserio?¿Como sueles manejar la incertidumbre en el trabajo?");
+    }
                 break;
             
             case 3:
