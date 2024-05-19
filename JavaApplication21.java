@@ -594,7 +594,59 @@ public class JavaApplication21 {
                 System.out.println("coloridos. Entre la multitud, pudiste notar como una chica destacaba por su risa.");
                 System.out.println("Una chica de pelo cobrizo, rizado y vestida de una forma informal");
                 System.out.println(",con una blusa de color morado y un pantalón de mezclilla largo. Ojos cafés y de una tez morena. ");
+
+                System.out.println("Al llegar al lugar se te presenta diferentes formar de poder interactuar con ellos,");
+                System.out.println("¿Con cuál te sentirías más cómodo?");
                 
+                 System.out.println("1.- Me siento más seguro/a cuando estoy hablando sobre un tema en el que  tengo experiencia y conocimiento.");
+                 System.out.println("2.- Me siento más inseguro/a al interactuar con personas que considero más   autoritarias o dominantes.");
+                 System.out.println("3.- Me siento más seguro/a cuando estoy con amigos cercanos o familiares.");
+                 System.out.println("4.- Me siento más seguro/a cuando estoy con amigos cercanos o familiares.");
+                 
+                 if (op2 == 1){
+                     System.out.println("Después de tomar la decisión de enfocarte en un tema en el que te sientes cómodo,");
+                     System.out.println("te acercas a un grupo más pequeño de personas que parecen estar dicutiendo sobre algo que te interesa profundamente.");
+                     System.out.println("Te unes a la conversación y rapidamente te sientes en tu elemento");
+                 }
+                 else if (op2 == 2){
+                     System.out.println("Después de notar la presencia de algunas personas que parecen tener una actitud más autoritaria o dominante en el grupo,");
+                     System.out.println("te sientes un poco inseguro/a sobre como interactuar con ellos.");
+                     System.out.println("Una de las chicas al notas esto, se acerca a ti sacándote levemente una conversación. ");
+                 }
+                 else if (op2 == 3){
+                     System.out.println("La chica dde antes al notar esto, te sonrió y te invitó a unirte a ella para enfrentar la situación juntos.");
+                     System.out.println("Su tono amigable te hizo sentir más a gusto.");
+                     System.out.println("Violett: Debes de ser nuevo/a por aquí");
+                 }
+                 else if (op2 == 4){
+                     System.out.println("Agregar Texto");
+                 }
+                 System.out.println("Gracias a esto llamas la atención de varias personar por esta iniciativa.");
+                 System.out.println("Violett se acerca con una sonrisa cálida en el rostro, mostrando interés genuino en lo que estás compartiendo");
+                 
+                 System.out.println("Violett: \"¡Wow, tienes muchas ideas interesantes! Realmente disfruto tu entusiasmo por este tema, Me encantaría saber más sobre lo que estás diciendo.");
+                 System.out.println("¿Qué te motivó a aprender tanto sobre esto?");
+                 System.out.println("Dice con entuciasmo, sintiendo inmediatamente una conexion");
+                 
+                 System.out.println("1.- Una curiosidad natural.");
+                 System.out.println("2.- Aumentar tu conocimiento.");
+                 System.out.println("3.- Sentir una gran pasión por esta.");
+                 
+                 op2 = captu.nextInt();
+                 if (op2 == 1){
+                     System.out.println("Violett: oh, entiendo completamente eso.");
+                     System.out.println("A menudo que me encuentro investigando sobre temas que simplemente me intrigan.");
+                     System.out.println("Es como si mi mente estuviera constantemente buscando nuevas cosas para descubrir y aprender");
+                 }
+                 else if (op2 == 2){
+                     System.out.println("Violett: Oh, ¡Totalmente! aumentar tu conocimiento es genial, ¿verdad? Siempre me encuentro buscando nuevas cosas para aprender, especialmente sobre temas que me interesan.");
+                     System.out.println("¿Qué te llevó a querer saber más sobre esto? ¿Fue como un '¡guau, ¡Esto es increíble!' ¿tipo de momento?");
+                 }
+                 else if (op2 == 3){
+                     System.out.println("Violett: ¡Qué maravilloso! La pasión puede ser un motor increíble para la investigación.");
+                     System.out.println("Cuando te apasiona algo, realmente te sumerges en ello, ¿verdad? Personalmente,");
+                     System.out.println("experimentó esa sensación al investigar sobre temas que realmente me emocionan");
+                 }
             }
             else if(op2==2){
                 System.out.println("Mientras lees tu libro se acerca una chica de pelo cobrizo, rizado y vestida de una ");
